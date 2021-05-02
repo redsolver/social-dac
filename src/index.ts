@@ -1,5 +1,5 @@
-import FeedDAC from "./dac";
+import SocialDAC from "./dac";
 
 (async () => {
-  new FeedDAC();
+  new SocialDAC();
 })();

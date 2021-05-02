@@ -1,6 +1,6 @@
-# Feed DAC
+# Social DAC
 
-**Documentation for the Feed DAC is available here: https://github.com/redsolver/feed-dac-library**
+**Documentation for the Social DAC is available here: https://github.com/redsolver/social-dac-library**
 
 Forked from Content Record DAC. The README below is not modified yet.
 
