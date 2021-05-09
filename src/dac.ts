@@ -39,6 +39,7 @@ export default class SocialDAC implements ISocialDAC {
       onUserLogin: this.onUserLogin.bind(this),
       follow: this.follow.bind(this),
       unfollow: this.unfollow.bind(this),
+      getLoggedInUserId: this.getLoggedInUserId.bind(this),
     };
 
     // create connection
@@ -90,6 +91,10 @@ export default class SocialDAC implements ISocialDAC {
       .catch((err) => {
         this.log("Failed to register skappname, err: ", err);
       });
+  }
+
+  public async getLoggedInUserId(): Promise<string> {
+    return await this.mySky.userID();
   }
 
   public async follow(userId: string): Promise<ISocialDACResponse> {
